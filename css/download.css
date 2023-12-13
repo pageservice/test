@@ -18,8 +18,8 @@ section#download{
   width: fit-content;
   display: block;
   padding: 3px 10px;
-  background-color: blue;
-  color: white;
+  background-color: gold;
+  color: black;
   border-radius: 8px;
  }
 section#download .wrap img{
