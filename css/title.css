@@ -1,0 +1,115 @@
+#title {
+  height: calc(100% );
+  min-height: 800px;
+  position: relative;
+  padding-top: 200px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+#title::before{
+ content: ""; 
+ width: 52%;
+ height: 280px;
+ display: block;
+ position: absolute;
+ left: 0;
+ bottom: 0; 
+ background-color: #32aefa;
+ border-radius: 0 140px 0 0;
+ animation-name: leftS;
+ animation-duration: 1s;
+ animation-direction: reverse; 
+ animation-timing-function: ease-in; 
+}
+@keyframes leftS{
+  0%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100%{
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+}
+#title>a{
+  
+}
+#title>a::before{
+  content: "";
+  background-image: url(../img/object-bg.png);
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-position-x: center;
+  background-size: contain;
+  width: 254px;
+  height: 324px;
+  display: block;
+  position: absolute;
+  left: 52%;
+  bottom:0;
+  z-index: 1;
+  animation-name: slideUP;
+  animation-duration: 0.5s;
+  animation-direction: reverse;
+  animation-timing-function: ease-in;
+  animation-delay: 0.7s;
+  transform: translateY(100%);
+  animation-fill-mode: forwards;
+}
+@keyframes slideUP{
+  from{
+    transform: translateY(0);
+  }
+  to{
+    transform: translateY(100%);
+  }
+}
+#title .wrap {
+  animation-name: titleT;
+  animation-duration: 1s;
+  animation-direction: reverse;
+  animation-timing-function: ease-in;
+}
+@keyframes titleT{
+  0%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100%{
+    opacity: 0;
+    transform: translateY(80%);
+  }
+}
+
+#title .wrap  h2 span{
+  font-family: 'snowflower';
+}
+#title .wrap  p {
+  
+}
+
+#title::after{
+ content: ""; 
+ width: 52%;
+ height: 280px;
+ display: block;
+ position: absolute;
+ right: 0;
+ bottom: 0; 
+ background-color: #3356b0;
+ border-radius: 140px 0 0 0;
+ animation-name: rightS;
+ animation-duration: 1s;
+ animation-direction: reverse;
+ animation-timing-function: ease-in; 
+}
+@keyframes rightS{
+  0%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100%{
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}
