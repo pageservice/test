@@ -15,7 +15,12 @@ section#download{
     
  }
  section#download .wrap a{
-   
+  width: fit-content;
+  display: block;
+  padding: 3px 10px;
+  background-color: blue;
+  color: white;
+  border-radius: 8px;
  }
 section#download .wrap img{
   grid-column: 2;
